@@ -13,9 +13,9 @@ const anotherId = Symbol("123")
 
 const bigNumber = 123124321233412313213n
 
-console.log(typeof bigNumber);
+// console.log(typeof bigNumber);
 
-console.log(id === anotherId);
+// console.log(id === anotherId);
 
 // Referance Type (Non-Primitive) Data Type
 // Arry, Object, Functions
@@ -29,5 +29,36 @@ let myObj = {
 }
 
 function myFunction(params) {
-    console.log("hello world");
+    // console.log("hello world");
 }
+
+
+//+++++++++++++++++++++++++++++++++
+
+//stack (primitive), Heap(non-primitive referance type)
+
+
+
+let myYoutubeName = "mayur@google.com"
+
+let anotherName = myYoutubeName
+anotherName = "chaiourcode"
+
+// console.log(myYoutubeName);
+// console.log(anotherName);
+
+
+let userOne = {
+    email: "mk@gmail.com",
+    upi: "mk@ybl"
+
+}
+
+
+let userTwo = userOne
+
+userTwo.email = "mayu@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
